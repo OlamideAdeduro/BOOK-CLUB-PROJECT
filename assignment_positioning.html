@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>assignment on positioning</title>
+        <style>
+            div{
+                right: 30px;
+                border: 4px solid #e6e6fa;
+            }
+            div.absolute{
+                position:absolute;
+                left:70px;
+                border:4px solid navajowhite;       
+            }
+            div.relative{
+                position:relative;
+                left:120px;
+                border:4px solid #f4c2c2;
+            }
+            div.fixed{
+                position:fixed;
+                top:0;
+                right: 2px;
+                width: 200px;
+                border:4px solid; 
+            }
+            div.sticky{
+                position:sticky;
+                top:1px;
+                left:40px;
+                width:100px;
+                border: 4px solid #301930;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>positioning</h2>
+        <img src="img of position.jpg" alt="my image" width="300">
+        <div>example with no position properties</div>
+        <div class="sticky">
+            <img src="img of bags.webp" alt="bag" width="250">
+        </div>
+        <div class="relative">
+            <img src="img of clothes.jpg" alt="clothes" width="150" height="150">
+        </div>
+        <div class="absolute">
+            <img src="shoes.jpg" alt="shoe" width="200" height="200"> 
+        </div>
+        <div class="fixed">
+            <img src="jewelleries.jpg" alt="necklace" width="200" height="150">
+        </div>
+        <div style="height:360px; border:none;"></div>
+    </body>
+</html>
