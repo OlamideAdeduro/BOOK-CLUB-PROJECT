@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>About Me</title>
+    </head>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: pink;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        button {padding: 10px 20px;
+            font-size: 16px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: navy;
+        }
+         #output {
+            margin-top: 20px;
+            font-size: 20px;
+            color: coral;
+        }
+    </style>
+    <body>
+  <h1>About Me</h1>
+    <button onclick="showStatement()">Click Here</button>
+
+    <p id="output"></p>
+
+    <script>
+        function showStatement() {
+            document.getElementById("output").innerHTML =
+                "Hello! My name is Olamide. I am learning JavaScript and I enjoy creating websites. My goal is to become a software developer.";
+        }
+    </script>
+    </body>
+</html>
