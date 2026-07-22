@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creepy Story</title>
+    <style>
+        body.dark{
+            color:white;
+            background:black;
+        }
+        button{
+            display:block;
+            margin:5px;
+        }
+        .textEntry{
+            margin-top: 17px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Basement </h1>
+    <p id="Story"> i wanted to find my friend, and he was hiding in the basement</p>
+    <button onclick="goDark()">Get In The Mood </button>
+    <div class="textEntry">Type your make here, if you dare: <input type="text" id="name"></div>
+    <button onclick="typeAndScream()">Please, Please Dont Click Me!</button>
+    <button onclick="finishTheStory()">Tell Me what Happened!</button>
+
+    <script>
+        function typeAndScream() {
+            var personName = document.getElementById("name").value;
+            alert("i told you not to do that" + personName);
+        }
+
+        function goDark() {
+            document.body.className = "dark";
+        }
+
+        function finishTheStory() {
+            document.getElementById("Story").innerHTML = "So i carefully searched the dungeon. There you are!";
+        }
+    </script> 
+</body>
+</html>
