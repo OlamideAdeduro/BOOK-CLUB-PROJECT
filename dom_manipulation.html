@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title>Dom Multiplication</title>
+    <style>
+        .alert{
+            color: aqua;
+            background:green;
+            padding:5px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1 id="heading">Welcome</h1>
+        <p>Hello</p>
+        <p>How are you</p>
+        <script>
+            /* First Step- Do this step first*/
+            let div = document.createElement('div');
+            div.id = "paragraph";
+            div.className = "alert";
+            div.innerHTML = "<p>Congrats! You have created a div. </p>";
+            document.body.append(div);
+            /*Second step:- Do this after completing second stage*/
+            let heading = document.getElementById("heading");
+            heading.innerHTML = '&#128512;'
+            /*Third Step:- DO this after completing second step*/
+            document.querySelector('header p').innerHTML = "<strong>Good Job!</strong>";
+            
+        </script>
+    </body>
+</html>
