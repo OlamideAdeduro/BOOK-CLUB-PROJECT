@@ -1,0 +1,11 @@
+/* descendant class*/
+  div p{
+    color:aqua;
+    font-size: 20px;
+}
+/*pseudo class*/
+button:hover{
+    background-color: yellowgreen;
+    color:azure;
+    padding: 20px;
+}
